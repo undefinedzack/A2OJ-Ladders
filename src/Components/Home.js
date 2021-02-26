@@ -17,10 +17,10 @@ const Home = () => {
 
         axios.get(url)
             .then(res => setDetails(res))
-            .then(console.log(details))
     }, [username])
     return (
         <>
+            {/* {details && console.log(details)} */}
             <div className='container mt-5 mb-5'>
                 <div className='d-flex justify-content-center'>
                     <h1>A2OJ</h1>
@@ -63,22 +63,23 @@ const Home = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {division.map((prob) => {
+                        {division.map((prob, index) => {
                             return(
-                                <tr>
+                                <tr key={index}>
                                     <th scope="row">{prob[0]}</th>
                                     <td><a href={'https://codeforces.com/problemset/problem/'+prob[2]+'/'+prob[3]} > {prob[1]} </a></td>
-                                    {details && details.data.result.map( (item) => {
+                                    {details && details.data.result.map( (item, ) => {
                                         
-                                        if (item.problem.contestId == prob[2] 
-                                            && item.problem.index == prob[3] 
-                                            && item.verdict == 'OK') {
+                                        if (item.problem.contestId.toString() === prob[2] 
+                                            && item.problem.index.toString() === prob[3] 
+                                            && item.verdict === 'OK') {
                                             return(
                                                 <td className='table-success'>
                                                     <pre>  <i className="bi bi-check2"></i></pre>
                                                 </td>
                                             )
                                         }
+                                        return <></>
                                     })}
                                 </tr>
                             )
