@@ -59,7 +59,7 @@ const Home = () => {
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Problem</th> 
-                            <th scope="col">Solved!</th>
+                            <th className='d-flex justify-content-center' scope="col">Solved!</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -75,7 +75,7 @@ const Home = () => {
                                             && item.verdict === 'OK') {
                                             return(
                                                 <td className='table-success'>
-                                                    <pre>  <i className="bi bi-check2"></i></pre>
+                                                    <div className='d-flex justify-content-center'>  <i className="bi bi-check2"></i></div>
                                                 </td>
                                             )
                                         }
