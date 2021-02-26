@@ -17,6 +17,7 @@ const Home = () => {
 
         axios.get(url)
             .then(res => setDetails(res))
+            .then(console.log(details))
     }, [username])
     return (
         <>
@@ -69,9 +70,9 @@ const Home = () => {
                                     <td><a href={'https://codeforces.com/problemset/problem/'+prob[2]+'/'+prob[3]} > {prob[1]} </a></td>
                                     {details && details.data.result.map( (item) => {
                                         
-                                        if (item.problem.contestId === prob[2] 
-                                            && item.problem.index === prob[3] 
-                                            && item.verdict === 'OK') {
+                                        if (item.problem.contestId == prob[2] 
+                                            && item.problem.index == prob[3] 
+                                            && item.verdict == 'OK') {
                                             return(
                                                 <td className='table-success'>
                                                     <pre>  <i className="bi bi-check2"></i></pre>
