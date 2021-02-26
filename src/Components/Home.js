@@ -25,7 +25,7 @@ const Home = () => {
                 <div className='d-flex justify-content-center'>
                     <h1>A2OJ</h1>
                 </div>
-                <div className="input-group mb-3">
+                <div className="input-group mb-5 mt-3 shadow bg-body rounded">
                     <span className="input-group-text" id="basic-addon1">@</span>
                     <input type="text" className="form-control" placeholder="Username" 
                         aria-label="Username" aria-describedby="basic-addon1"
