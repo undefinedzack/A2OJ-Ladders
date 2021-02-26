@@ -1,6 +1,8 @@
 # A2OJ Tracking React App
 
-This is a simple app made with Reactjs to track ladders on A2OJ.com
+A simple app made with React.js to track ladders on A2OJ.com
+
+Made with #React, #Bootstrap and a lot of logic, just kidding!
 
 <img src='./images/a2oj.jpg'>
 
