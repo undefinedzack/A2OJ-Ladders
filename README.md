@@ -4,5 +4,4 @@ A simple app made with React.js to track ladders on A2OJ.com
 
 Made with #React, #Bootstrap and a lot of logic, just kidding!
 
-<img src='./images/a2oj.jpg'>
-
+<img src='./images/a2oj2.jpg'>
