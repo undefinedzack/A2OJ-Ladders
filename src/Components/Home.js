@@ -24,6 +24,7 @@ const Home = () => {
         }
 
         fetchDetails()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [flag])
 
     return (
